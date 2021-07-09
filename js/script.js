@@ -16,16 +16,13 @@ function TodoPost(e){
     
     var to_do = document.getElementById("todoText").value;
     var list = document.getElementById("todoList");
-
     var div = document.createElement("div");
     var checkbox = document.createElement("input");
     var label = document.createElement("label")
 
     checkbox.type = "checkbox"; 
     checkbox.name = "todo";
-
     label.textContent = to_do; 
-
     div.appendChild(checkbox); 
     div.appendChild(label); 
     list.appendChild(div); 
